@@ -42,6 +42,7 @@ $route['lock/(:any)'] = 'welcome/shucks';
 $route['lock/(:any)/(:any)'] = 'welcome/shucks';
 $route['show/(:num)'] = 'first/gimme/$1';
 //$route['lock/(.*)'] = 'welcome/shucks';
+$route['dunno'] = 'guess';
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
 
