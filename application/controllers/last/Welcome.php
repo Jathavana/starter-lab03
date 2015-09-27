@@ -5,6 +5,8 @@
  * Our quotes model has been autoloaded, because we use it everywhere.
  * 
  * controllers/Welcome.php
+ * 
+ * This controller takes care of the last page, and displays it. 
  *
  * ------------------------------------------------------------------------
  */
@@ -18,30 +20,14 @@ class Welcome extends Application {
     //  The normal pages
     //-------------------------------------------------------------
 
- 
     function index() {
-        $this->data['pagebody'] = 'homepage';    // this is the view we want shown
-        // build the list of authors, to pass on to our view
-        $source = $this->quotes->all();
-        $authors = array();
-        foreach ($source as $record) {
-            $authors[] = array('who' => $record['who'], 'mug' => $record['mug'], 'href' => $record['where']);
-        }
-        $this->data['authors'] = $authors;
-
-        $this->render();
-    }
-    
-    //This function displays page 2, when someone accesses it vya specifying welcome/shucks
-    function shucks(){
         $this->data['pagebody'] = 'justone';    // this is the view we want shown
         // build the list of authors, to pass on to our view
-        $source = $this->quotes->get(2);
+        $source = $this->quotes->last();
         $this->data = array_merge($this->data, $source);
-        $this->render();        
+        
+        $this->render();
     }
-
 }
 
 /* End of file Welcome.php */
-/* Location: application/controllers/Welcome.php */
