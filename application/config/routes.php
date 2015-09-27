@@ -37,12 +37,12 @@
 | in the URL cannot be matched to a valid route.
 |
 */
-$route['sleep'] = 'first/zzz';
-$route['lock/(:any)'] = 'welcome/shucks';
-$route['lock/(:any)/(:any)'] = 'welcome/shucks';
-$route['show/(:num)'] = 'first/gimme/$1';
+$route['sleep'] = 'first/zzz'; //First link from homepage
+$route['lock/(:any)'] = 'welcome/shucks'; //Any characters after lock, directs to shucks (2nd)
+$route['lock/(:any)/(:any)'] = 'welcome/shucks'; //Use of any wildcard after any/any
+$route['show/(:num)'] = 'first/gimme/$1'; //Sending specific parameters to routing
 //$route['lock/(.*)'] = 'welcome/shucks';
-$route['dunno'] = 'guess';
+$route['dunno'] = 'guess'; 
 $route['(?i)([a-z]{4})/bingo'] = 'bingo';
 $route['(?i)(comp)(\d){4}/(.*)'] = 'bingo/wisdom';
 $route['default_controller'] = "welcome";
