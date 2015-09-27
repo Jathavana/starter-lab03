@@ -5,6 +5,8 @@
  * Our quotes model has been autoloaded, because we use it everywhere.
  * 
  * controllers/Welcome.php
+ * 
+ * This controller takes care of the last page, and displays it. 
  *
  * ------------------------------------------------------------------------
  */

@@ -1,10 +1,10 @@
 <?php
 
 /* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Bingo displays the last two pages, when they are accessed through 
+ * some very forgiving phrases. 
  */
+
 
 class bingo extends Application {
     
@@ -12,6 +12,7 @@ class bingo extends Application {
         parent::__construct();
     }
     
+    //Display fifth page
     function index (){
         $this->data['pagebody'] = 'justone';    // this is the view we want shown
         // build the list of authors, to pass on to our view
@@ -20,6 +21,7 @@ class bingo extends Application {
         $this->render();  
     }
     
+    //Display last page
     function wisdom (){
         $this->data['pagebody'] = 'justone';    // this is the view we want shown
         // build the list of authors, to pass on to our view

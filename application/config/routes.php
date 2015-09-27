@@ -42,9 +42,9 @@ $route['lock/(:any)'] = 'welcome/shucks'; //Any characters after lock, directs t
 $route['lock/(:any)/(:any)'] = 'welcome/shucks'; //Use of any wildcard after any/any
 $route['show/(:num)'] = 'first/gimme/$1'; //Sending specific parameters to routing
 //$route['lock/(.*)'] = 'welcome/shucks';
-$route['dunno'] = 'guess'; 
-$route['(?i)([a-z]{4})/bingo'] = 'bingo';
-$route['(?i)(comp)(\d){4}/(.*)'] = 'bingo/wisdom';
+$route['dunno'] = 'guess';  //Fourth link
+$route['(?i)([a-z]{4})/bingo'] = 'bingo'; //fifth link, any four letter word/bingo
+$route['(?i)(comp)(\d){4}/(.*)'] = 'bingo/wisdom'; //comp[anynumber]/wisdom
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
 

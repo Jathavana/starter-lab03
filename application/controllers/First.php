@@ -1,9 +1,9 @@
 <?php
 
 /* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * The first controller, displays the first page when they 
+ * go directly to it, or through zzz, and it also displays
+ * pages access through a specified id.
  */
 
 class first extends Application {
