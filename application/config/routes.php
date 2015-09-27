@@ -44,6 +44,7 @@ $route['show/(:num)'] = 'first/gimme/$1';
 //$route['lock/(.*)'] = 'welcome/shucks';
 $route['dunno'] = 'guess';
 $route['(?i)([a-z]{4})/bingo'] = 'bingo';
+$route['(?i)(comp)(\d){4}/(.*)'] = 'bingo/wisdom';
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
 
